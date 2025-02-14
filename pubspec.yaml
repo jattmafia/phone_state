@@ -1,0 +1,26 @@
+name: phone_state_background
+description: A flutter plugin to handle Phone Call State and execute a Dart callback in background.
+version: 0.0.4
+homepage: https://github.com/sodipto/flutter-phone-state-background
+
+environment:
+  sdk: ^3.6.1
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: me.sodipto.phone_state_background
+        pluginClass: PhoneStateBackgroundPlugin
+
