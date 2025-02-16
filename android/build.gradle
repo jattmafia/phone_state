@@ -25,7 +25,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 30
+   compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+    }
     namespace 'me.sodipto.phone_state_background' 
 
     compileOptions {
